@@ -1,0 +1,36 @@
+
+body{
+    background-image: url(station.jpg);
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+
+}
+h2{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+button{
+    border: none;
+    padding: 10px 0 10px 0;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#increment-btn{
+    background: darkred;
+}
+
+#save-btn{
+    background: green;
+}
+#save-el{
+    color: black;
+    font-size: bold;
+}

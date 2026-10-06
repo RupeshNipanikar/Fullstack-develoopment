@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    
+
+}
+
+.container{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    flex-wrap: wrap;
+}   
+h3{
+    font-size: 40px;
+    color: white;
+    
+
+}
+
+#scoreboardHome-el, #scoreboardGuest-el{
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    background: black;
+    font-family: 'Cursed Timer ULiL';
+    font-size: 80px;
+    justify-content: space-around;
+    color: rgb(236, 118, 118);
+    margin-bottom: 20px;
+}
+
+button{
+    background: transparent;
+    font-size: bold;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    padding: 6px;
+    margin: 3px;
+    font-style: bold;
+    border-radius: 3px;
+    padding: 5px;
+}

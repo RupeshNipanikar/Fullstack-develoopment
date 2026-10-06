@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="container">
+        <div><button id="newGame" onclick="reset()">New Game</button>
+            <h3>Home</h3>
+            <div id="scoreboardHome-el">0</div>
+            <button id="score-one" onclick="HomePlus1()">+1</button>
+            <button id="score-two" onclick="HomePlus2()">+2</button>
+            <button id="score-three" onclick="HomePlus3()">+3</button>
+        </div>
+        <div>
+            <h3>Away</h3>
+            <div id="scoreboardGuest-el">0</div>
+            <button id="score-one" onclick="GuestPlus1()">+1</button>
+            <button id="score-two" onclick="GuestPlus2()">+2</button>
+            <button id="score-three" onclick="GuestPlus3()">+3</button>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
