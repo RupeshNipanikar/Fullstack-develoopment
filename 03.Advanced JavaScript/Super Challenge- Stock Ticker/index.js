@@ -1,4 +1,3 @@
-
 /*
 App requirements:
  - The app should display the name, symbol, and 
@@ -23,10 +22,8 @@ Challenge:
    fakeStockAPI.js.
 */
 import getStockData from "./fakeStockAPI.js"
+
 let previousPrice
-
-
-
 
 function renderStockTicker(stockData) {
     const stockDisplayName = document.getElementById('name')
@@ -36,32 +33,23 @@ function renderStockTicker(stockData) {
     const stockDisplayTime = document.getElementById('time')
 
     stockDisplayName.textContent = stockData.name
-    stockDisplaySymbol.textContent = stockData.sym   
-    stockDisplayPrice.textContent = stockData.price 
-    stockDisplayPriceIcon.textContent = stockData.svg
-    stockDisplayTime.textContent = stockData.time
+    stockDisplaySymbol.textContent = stockData.sym
+    stockDisplayPrice.textContent = stockData.price
+    stockDisplayTime.textContent = stockData.time 
 
-    if(stockData.price > previousPrice){
-         stockDisplayPriceIcon.innerHTML = `<img src="./svg/green.svg">`
-         
-    }else if (stockData.price < previousPrice){
-         stockDisplayPriceIcon.innerHTML = `<img src="./svg/red.svg">`
-        
-    }else{
-         stockDisplayPriceIcon.innerHTML = `<img src="./svg/grey.svg">`
-    }
 
-    if(previousPrice === undefined){
-    previousPrice = stockData.price
-    }
-
+     if(stockData.price > previousPrice){
+          stockDisplayPriceIcon.innerHTML = `<img src="./svg/green.svg">`
+     }else if(stockData.price < previousPrice){
+          stockDisplayPriceIcon.innerHTML = `<img src="./svg/red.svg">`
+          
+     }else{
+          stockDisplayPriceIcon.innerHTML = `<img src="./svg/grey.svg">`
+}
+previousPrice = stockData.price
 }
 
-
-setInterval(() => {
-    const stockData = getStockData()
-    renderStockTicker(stockData)
-}, 1500);
-
-
-
+setInterval(function(){
+     const stockData = getStockData()
+     renderStockTicker(stockData)
+},1500)   
