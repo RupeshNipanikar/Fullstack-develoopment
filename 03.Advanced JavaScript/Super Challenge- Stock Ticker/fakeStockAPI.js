@@ -1,4 +1,4 @@
-export default function getStockData() {
+ export default function getStockData() {
     return {
         name: 'QtechAI',
         sym: 'QTA',
@@ -7,3 +7,4 @@ export default function getStockData() {
     }
 }
 
+//export default getStockData

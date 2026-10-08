@@ -50,6 +50,6 @@ previousPrice = stockData.price
 }
 
 setInterval(function(){
-     const stockData = getStockData()
+     const stockData = getStockData()  
      renderStockTicker(stockData)
 },1500)   
