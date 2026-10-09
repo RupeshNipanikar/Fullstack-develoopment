@@ -32,10 +32,12 @@ function renderStockTicker(stockData) {
     const stockDisplayPriceIcon = document.getElementById('price-icon')
     const stockDisplayTime = document.getElementById('time')
 
-    stockDisplayName.textContent = stockData.name
-    stockDisplaySymbol.textContent = stockData.sym
-    stockDisplayPrice.textContent = stockData.price
-    stockDisplayTime.textContent = stockData.time 
+    const {name, sym, price, time} = stockData
+
+    stockDisplayName.textContent = name
+    stockDisplaySymbol.textContent = sym
+    stockDisplayPrice.textContent = price
+    stockDisplayTime.textContent = time 
 
 
      if(stockData.price > previousPrice){
