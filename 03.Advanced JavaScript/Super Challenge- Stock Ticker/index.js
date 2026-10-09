@@ -40,9 +40,9 @@ function renderStockTicker(stockData) {
     stockDisplayTime.textContent = time 
 
 
-     if(stockData.price > previousPrice){
+     if(price > previousPrice){
           stockDisplayPriceIcon.innerHTML = `<img src="./svg/green.svg">`
-     }else if(stockData.price < previousPrice){
+     }else if(price < previousPrice){
           stockDisplayPriceIcon.innerHTML = `<img src="./svg/red.svg">`
           
      }else{
