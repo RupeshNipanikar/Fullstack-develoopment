@@ -40,14 +40,23 @@ function renderStockTicker(stockData) {
     stockDisplayTime.textContent = time 
 
 
-     if(price > previousPrice){
-          stockDisplayPriceIcon.innerHTML = `<img src="./svg/green.svg">`
-     }else if(price < previousPrice){
-          stockDisplayPriceIcon.innerHTML = `<img src="./svg/red.svg">`
+//      if(price > previousPrice){
+//           stockDisplayPriceIcon.innerHTML = `<img src="./svg/green.svg">`
+//      }else if(price < previousPrice){
+//           stockDisplayPriceIcon.innerHTML = `<img src="./svg/red.svg">`
           
-     }else{
-          stockDisplayPriceIcon.innerHTML = `<img src="./svg/grey.svg">`
-}
+//      }else{
+//           stockDisplayPriceIcon.innerHTML = `<img src="./svg/grey.svg">`
+// }
+
+const priceDirectionIcon = price > previousPrice ? 'green.svg': price < previousPrice ? 'red.svg' : 'grey.svg'
+
+const priceIconElement = document.createElement('img')
+priceIconElement.src = `./svg/${priceDirectionIcon}`
+priceIconElement.alt = "direction image"
+stockDisplayPriceIcon.innerHTML = ""
+stockDisplayPriceIcon.appendChild(priceIconElement)
+
 previousPrice = stockData.price
 }
 
