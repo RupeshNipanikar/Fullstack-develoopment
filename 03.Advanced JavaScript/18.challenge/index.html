@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Property Finder</h1>
+        <p>Find your next home.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="filter-section">
+            <label for="max-price">Maximum price (£)</label>
+            <input type="number" id="max-price" placeholder="e.g. 500000">
+            <button id="filter-btn">Filter Properties</button>
+            <button id="show-all-btn" class="secondary-btn">Show All</button>
+        </section>
+
+        <p id="property-count">Properties found: 0</p>
+
+        <section id="properties-container" class="properties-grid">
+            <!-- JavaScript will render property cards here -->
+        </section>
+
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
