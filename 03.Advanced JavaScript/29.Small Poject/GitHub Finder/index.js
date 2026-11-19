@@ -25,13 +25,37 @@ searchBtn.addEventListener('click',()=>{
         
     }
         const data = await response.json();
-        profileContainer.innerHTML=
-        `<img src="${data.avatar_url}" alt="GitHub Profile Picture" width="120" height="120">
+       profileContainer.innerHTML = `
+    <div class="profile-card">
+
+        <img
+            class="avatar"
+            src="${data.avatar_url}"
+            alt="GitHub profile picture"
+        >
+
         <h2>${data.login}</h2>
-        <p>Name: ${data.name || "Name not available"}</p>
-        <p>Followers:${data.followers}</p>
-        <p>Public Repositories: ${data.public_repos}</p>
-`
+
+        <p class="name">
+            ${data.name || "Just another GitHub developer"}
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>${data.followers}</h3>
+                <p>Followers</p>
+            </div>
+
+            <div class="stat">
+                <h3>${data.public_repos}</h3>
+                <p>Repositories</p>
+            </div>
+
+        </div>
+
+    </div>
+`;
     } catch (error) {
         profileContainer.innerHTML = `<p>${error.message}</p>`;
     }finally{

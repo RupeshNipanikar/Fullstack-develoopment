@@ -3,16 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Finder</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <input type="text" id="username" placeholder="Enter Username" autocomplete="given-name">
-    <button id="search-btn">Search</button>
+    <main class="app">
 
-    <div id="profile-container"></div>
+        <header class="header">
+            <div class="logo">✦ GitHub Finder</div>
+            <h1>Discover amazing <span>developers.</span></h1>
+            <p>Find GitHub profiles, explore developers and their work.</p>
+        </header>
 
+        <div class="search-box">
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter GitHub username..."
+            >
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="profile-container"></div>
+
+        <footer>
+            Made using JavaScript & GitHub API
+        </footer>
+
+    </main>
 
     <script src="index.js"></script>
 </body>
+
 </html>
