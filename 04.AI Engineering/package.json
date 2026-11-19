@@ -2,6 +2,6 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^18.0.8",
-    "openai": "^7.42.0"
+    "openai": "^7.42.0",
   }
 }
