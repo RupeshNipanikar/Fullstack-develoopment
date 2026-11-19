@@ -1,2 +1,2 @@
-# Fullstack develoopment
+# Fullstack development
 
