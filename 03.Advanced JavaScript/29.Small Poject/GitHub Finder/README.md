@@ -27,7 +27,7 @@ A web application that allows users to search for GitHub profiles and explore de
 1. Clone the repository:
 
    ```bash
-   git clone 03.Advanced JavaScript/29.Small Poject/GitHub Finder
+   git clone https://github.com/RupeshNipanikar/Fullstack-development/tree/main/03.Advanced%20JavaScript/29.Small%20Poject/GitHub%20Finder
    ```
 
 2. Navigate to the project directory:
